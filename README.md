@@ -52,7 +52,7 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 - Store the cleaned and transformed data into a PostgreSQL database.
 - Database schema includes separate tables for **weather**, **air quality**, and **merged data**.
 
-### **4. Data Analysis (Optional)**
+### **4. Data Analysis**
 - Basic exploratory analysis using SQL queries or in a Jupyter notebook.
 - Queries include:
   - Average daily temperature and air quality.
