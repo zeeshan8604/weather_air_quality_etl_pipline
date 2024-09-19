@@ -21,7 +21,7 @@ def fetch_weather_data(location, start_date, end_date):
         dict: The weather data as a Python dictionary.
     """
     # API request URL
-    url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/{start_date}/{end_date}?unitGroup=metric&key={Config.API_KEY}"
+    url = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/{start_date}/{end_date}?unitGroup=metric&key={Config.VISUALCROSSING_API_KEY}"
 
     try:
         # Make the API request

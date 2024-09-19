@@ -24,8 +24,8 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 - **Programming Language:** Python
 - **Database:** PostgreSQL
 - **Data Sources:**
-  - **Weather API:** [OpenWeather](https://openweathermap.org/api)
-  - **Air Quality API:** [OpenAQ](https://openaq.org/#/)
+  - **Weather API:** [VisualCrossing](https://www.visualcrossing.com/)
+  - **Air Quality API:** [AirVisual](https://www.iqair.com/)
 
 - **Python Libraries:**
   - `requests`: For interacting with APIs.

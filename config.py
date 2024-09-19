@@ -6,7 +6,8 @@ load_dotenv()
 
 # Configuration for the Visual Crossing API
 class Config:
-    API_KEY = os.getenv("VISUALCROSSING_API_KEY")
+    VISUALCROSSING_API_KEY = os.getenv("VISUALCROSSING_API_KEY")
+    AIRVISUAL_API_KEY = os.getenv("AIRVISUAL_API_KEY")
     DATABASE_URL = os.getenv("DATABASE_URL")
 
     # Example default values; adjust or extend as needed
