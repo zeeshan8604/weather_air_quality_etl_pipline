@@ -37,8 +37,8 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 ## **ETL Pipeline Breakdown**
 
 ### **1. Data Extraction**
-- **Weather Data:** Collected using the OpenWeather API. Data includes temperature, humidity, wind speed, and weather conditions.
-- **Air Quality Data:** Collected using the OpenAQ API, which provides air quality measurements such as PM2.5, PM10, and AQI (Air Quality Index).
+- **Weather Data:** Collected using the VisualCrossing API. Data includes temperature, humidity, wind speed, and weather conditions.
+- **Air Quality Data:** Collected using the AirVisual API, which provides air quality measurements such as PM2.5, PM10, and AQI (Air Quality Index).
   
 ### **2. Data Transformation**
 - Handle missing data and clean the dataset.
@@ -61,7 +61,7 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 ### **1. Prerequisites**
 - **Python** (version 3.7 or above)
 - **PostgreSQL** (with database and user access)
-- API keys for [OpenWeather](https://openweathermap.org/api) and [OpenAQ](https://openaq.org/#/)
+- API keys for [VisualCrossing](https://www.visualcrossing.com/) and [AirVisual](https://www.iqair.com/)
 
 ### **2. Setup Instructions**
 
