@@ -19,7 +19,9 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 ├── notebooks
 │   └── analysis.ipynb    # Jupyter notebook for data exploration and analysis
 ├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+├── README.md             # Project documentation
+├── LICENSE               # License details
+└── run_etl.sh            # Executable for ETL
 ```
 
 ## **Technologies Used**
@@ -32,7 +34,7 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 - **Python Libraries:**
   - `requests`: For interacting with APIs.
   - `pandas`: For data manipulation and cleaning.
-  - `SQLAlchemy`/`psycopg2`: For database interaction.
+  - `SQLAlchemy`: For database interaction.
   - `numpy`: For numerical computations.
   - `dotenv`: To handle environment variables (API keys, DB credentials).
 
@@ -69,8 +71,8 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/weather-air-quality-etl.git
-   cd weather-air-quality-etl
+   git clone https://github.com/your_username/weather_air_quality_etl.git
+   cd weather_air-_quality_etl
    ```
 
 2. Create and activate a virtual environment:
@@ -104,6 +106,16 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
    python src/transform.py
    python src/load.py
    ```
+  
+  Alternatively,
+  Make sure the run_etl.sh is executable by running
+  ```bash
+  chmod +x etl.sh
+  ```
+  Execute the script with
+  ```bash
+  ./run_etl.sh
+  ```
 
 ### **3. Running Analysis**
 - Explore the data using the provided Jupyter notebook:
