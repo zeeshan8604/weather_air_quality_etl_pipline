@@ -108,9 +108,10 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
    ```
   
   Alternatively,
+  
   Make sure the run_etl.sh is executable by running
   ```bash
-  chmod +x etl.sh
+  chmod +x run_etl.sh
   ```
   Execute the script with
   ```bash
