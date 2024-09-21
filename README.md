@@ -71,8 +71,8 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/weather_air_quality_etl.git
-   cd weather_air_quality_etl
+   git clone https://github.com/your_username/weather_air_quality_etl_pipline.git
+   cd weather_air_quality_etl_pipline
    ```
 
 2. Create and activate a virtual environment:
