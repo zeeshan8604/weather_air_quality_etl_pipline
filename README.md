@@ -1,6 +1,6 @@
 # **Weather and Air Quality ETL Pipeline**
 
-![](Air-Quality-Hero.jpg)
+![](bground.jpg)
 
 ## **Project Overview**
 
