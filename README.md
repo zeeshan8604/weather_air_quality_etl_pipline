@@ -89,9 +89,9 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that integr
 4. Set up the environment variables:
    - Create a `.env` file in the root directory with the following keys:
      ```
-     OPENWEATHER_API_KEY=<your_openweather_api_key>
-     OPENAQ_API_KEY=<your_openaq_api_key>
-     DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<dbname>
+    VISUALCROSSING_API_KEY = <your_visualcrossing_api_key>
+    AIRVISUAL_API_KEY = <your_airvisual_api_key>
+    DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<dbname>
      ```
 
 5. Set up the PostgreSQL database:

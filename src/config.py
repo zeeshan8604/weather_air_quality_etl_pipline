@@ -12,5 +12,5 @@ class Config:
 
     # Example default values; adjust or extend as needed
     DEFAULT_LOCATION = "ioannina"
-    DEFAULT_START_DATE = "2023-09-04"
-    DEFAULT_END_DATE = "2023-09-01"
+    DEFAULT_START_DATE = "2024-06-03"
+    DEFAULT_END_DATE = "2024-09-03"
