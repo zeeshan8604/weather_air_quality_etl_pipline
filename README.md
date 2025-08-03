@@ -1,128 +1,53 @@
-# **Weather and Air Quality ETL Pipeline**
+# Weather & Air Quality ETL Pipeline
 
-![](bground.jpg)
+This project is an end-to-end **ETL (Extract, Transform, Load) pipeline** that gathers weather and air quality data from public APIs, cleans and merges the datasets, and loads them into a PostgreSQL database. It also includes basic data analysis and visualization using Jupyter Notebook.
 
-## **Project Overview**
+## 🚀 Features
 
-This project demonstrates an ETL (Extract, Transform, Load) pipeline that integrates weather and air quality data for a specified city over a defined time period. The data is extracted from external APIs, transformed (cleaned and processed), and loaded into a PostgreSQL database. The goal of this project is to provide a clean, well-structured dataset for further analysis or reporting.
+- 📥 **Data Extraction** from Visual Crossing (Weather API) and AirVisual (Air Quality API)
+- 🧹 **Data Transformation** using Pandas (cleaning, merging, formatting)
+- 🛢️ **Data Loading** into PostgreSQL using SQLAlchemy
+- 📊 **Exploratory Data Analysis** in Jupyter Notebook
+- 🗂️ Configurable API keys and endpoints via environment variables
 
-## **Project Structure**
-```
-├── src
-│   ├── extract.py        # Code for extracting data from APIs
-│   ├── transform.py      # Code for cleaning and transforming the data
-│   ├── load.py           # Code for loading data into PostgreSQL
-│   ├── config.py         # Configuration for API keys, database credentials
-│   └── utils.py          # Utility functions for the ETL process
-├── sql
-│   └── schema.sql        # SQL script for creating database schema
-├── notebooks
-│   └── analysis.ipynb    # Jupyter notebook for data exploration and analysis
-├── requirements.txt      # Python dependencies
-├── README.md             # Project documentation
-├── LICENSE               # License details
-└── run_etl.sh            # Executable for ETL
-```
+## 🔧 Tech Stack
 
-## **Technologies Used**
-- **Programming Language:** Python
-- **Database:** PostgreSQL
-- **Data Sources:**
-  - **Weather API:** [VisualCrossing](https://www.visualcrossing.com/)
-  - **Air Quality API:** [AirVisual](https://www.iqair.com/)
+- Python
+- Pandas
+- PostgreSQL
+- SQLAlchemy
+- Jupyter Notebook
+- APIs: Visual Crossing & AirVisual
 
-- **Python Libraries:**
-  - `requests`: For interacting with APIs.
-  - `pandas`: For data manipulation and cleaning.
-  - `SQLAlchemy`: For database interaction.
-  - `numpy`: For numerical computations.
-  - `dotenv`: To handle environment variables (API keys, DB credentials).
+## 🧠 Skills Demonstrated
 
-## **ETL Pipeline Breakdown**
+- Real-world ETL architecture
+- API integration and error handling
+- Data cleaning and transformation
+- Relational database usage for analytics
+- Modular Python scripting
 
-### **1. Data Extraction**
-- **Weather Data:** Collected using the VisualCrossing API. Data includes temperature, humidity, wind speed, and weather conditions.
-- **Air Quality Data:** Collected using the AirVisual API, which provides air quality measurements such as PM2.5, PM10, and AQI (Air Quality Index).
-  
-### **2. Data Transformation**
-- Handle missing data and clean the dataset.
-- Convert temperature units (Kelvin to Celsius).
-- Merge weather and air quality datasets based on date and location.
-- Create additional features such as "Feels like temperature" or AQI categories (Good, Moderate, Unhealthy, etc.).
+## 📈 Sample Output
 
-### **3. Data Loading**
-- Store the cleaned and transformed data into a PostgreSQL database.
-- Database schema includes separate tables for **weather**, **air quality**, and **merged data**.
+- Cleaned and structured weather + AQI data
+- EDA charts showing temperature vs AQI
+- PostgreSQL tables for structured querying
 
-### **4. Data Analysis**
-- Basic exploratory analysis using SQL queries or in a Jupyter notebook.
-- Queries include:
-  - Average daily temperature and air quality.
-  - Correlation analysis between weather and air quality metrics.
+## 📁 Project Structure
 
-## **How to Run the Project**
+── extract/ # Scripts to fetch data from APIs
+├── transform/ # Scripts to clean and merge datasets
+├── load/ # PostgreSQL loader scripts
+├── notebooks/ # Jupyter Notebook for analysis
+├── requirements.txt # Python dependencies
+├── .env # API keys and credentials (not pushed)
+└── README.md
 
-### **1. Prerequisites**
-- **Python** (version 3.7 or above)
-- **PostgreSQL** (with database and user access)
-- API keys for [VisualCrossing](https://www.visualcrossing.com/) and [AirVisual](https://www.iqair.com/)
+## 📌 Note
 
-### **2. Setup Instructions**
+This project is a customized and enhanced version of an open-source pipeline originally created by [@themispap](https://github.com/themispap).
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/weather_air_quality_etl_pipline.git
-   cd weather_air_quality_etl_pipline
-   ```
+## 👤 Author
 
-2. Create and activate a virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Set up the environment variables:
-   - Create a `.env` file in the root directory with the following keys:
-     ```
-    VISUALCROSSING_API_KEY = <your_visualcrossing_api_key>
-    AIRVISUAL_API_KEY = <your_airvisual_api_key>
-    DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<dbname>
-     ```
-
-5. Set up the PostgreSQL database:
-   - Run the SQL script to create the schema:
-     ```bash
-     psql -U <username> -d <dbname> -f sql/schema.sql
-     ```
-
-6. Run the ETL pipeline:
-   ```bash
-   python src/extract.py
-   python src/transform.py
-   python src/load.py
-   ```
-  
-  Alternatively,
-  
-  Make sure the run_etl.sh is executable by running
-  ```bash
-  chmod +x run_etl.sh
-  ```
-  Execute the script with
-  ```bash
-  ./run_etl.sh
-  ```
-
-### **3. Running Analysis**
-- Explore the data using the provided Jupyter notebook:
-  ```bash
-  jupyter notebook notebooks/analysis.ipynb
-  ```
-
-## **License**
-This project is licensed under the MIT License. See the LICENSE file for details.
+**Zeeshan Ahmed**  
+[GitHub Profile](https://github.com/zeeshan8604)
